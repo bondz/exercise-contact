@@ -57,6 +57,11 @@ app.use(
   }),
 );
 
+app.use(express.static(path.join(__dirname, '../', 'client/build')));
+app.get('/*', (_req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'client/build/index.html'));
+});
+
 // catch 404 and forward to error handler
 app.use(function(
   _req: express.Request,
