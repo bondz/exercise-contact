@@ -1,3 +1,3 @@
-yarn tsc
+(yarn tsc && exit)
 
-cd client && yarn && yarn build
+(cd client && yarn && yarn build && exit)
