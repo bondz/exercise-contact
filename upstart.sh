@@ -1,5 +1,3 @@
 yarn tsc
 
-cd client
-yarn
-yarn build
+cd client && yarn && yarn build
