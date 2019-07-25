@@ -1,3 +1,6 @@
-(yarn tsc && exit)
+yarn tsc
 
-(cd client && yarn && yarn build && exit)
+cd client
+export SKIP_PREFLIGHT_CHECK=true
+yarn
+yarn build
